@@ -14,6 +14,7 @@ class GalleryItem extends Component {
   }
 
   render() {
+
     return (
       <div>
         {/* Image or Description */}
@@ -32,7 +33,7 @@ class GalleryItem extends Component {
 
         {/* Like Button */}
         <div>
-          <button>Love it!</button>
+          <button onClick={() => this.props.onLike(this.props.item.id)}>Love it!</button>
         </div>
 
         {/* Display current likes */}

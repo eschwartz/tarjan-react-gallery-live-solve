@@ -25,6 +25,21 @@ class App extends Component {
     });
   }
 
+  onLike = (itemId) => {
+    console.log('onLike in App.js. ID to like:', itemId);
+    
+    axios({
+      method: 'PUT',
+      url: `/gallery/like/${itemId}`
+    }).then(response => {
+      console.log('PUT complete', response)
+
+      // TODO: call GET again, and refresh the gallery
+    }).catch(err => {
+      console.error('PUT Failed', err);
+    });
+  }
+
   render() {
     return (
       <div className="App">
@@ -36,6 +51,7 @@ class App extends Component {
         <h3>My Photo Gallery</h3>
         <GalleryList 
           gallery={this.state.gallery}
+          onLike={this.onLike}
         />
       </div>
     );
