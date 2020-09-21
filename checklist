@@ -5,8 +5,8 @@
 
 
 - [x] GET /gallery in App.js, and save to state and render <img>
-- [ ] Render images via `GalleryList` and `GalleryItem`
-- [ ] Click image to see description
+- [x] Render images via `GalleryList` and `GalleryItem`
+- [x] Click image to see description
 - [ ] Display number of likes
 - [ ] Like button --> PUT /gallery/like/:id
     - Update DOM with latest likes
