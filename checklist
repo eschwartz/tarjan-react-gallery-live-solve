@@ -1,12 +1,21 @@
 [x] Look through the provided code
 [x] Test out existing routes in Postman
-[ ] Add photos to public/images
-  [ ] Update data.js w/id, title, desc, path
+[x] Add photos to public/images
+  [x] Update data.js w/id, title, desc, path
 
-[ ] Click image to see description
 [ ] Click button to "like"
     - probs use PUT endpoint
 
+- [ ] GET /gallery in App.js, and save to state
+- [ ] Render images via `GalleryList` and `GalleryItem`
+- [ ] Click image to see description
+- [ ] Display number of likes
+- [ ] Like button --> PUT /gallery/like/:id
+    - Update DOM with latest likes
+
+
+
+From Docs....
 - Use `axios` to retrieve (`GET`) data from to `/gallery` and store it in `App.js`.
 - Create a new **component** for the `GalleryList` and pass it the gallery data stored in `App` via `props`.
     - Iterate (loop over) the list of gallery data
