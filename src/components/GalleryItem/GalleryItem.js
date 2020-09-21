@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Col} from 'react-bootstrap';
 
 class GalleryItem extends Component {
 
@@ -16,7 +17,7 @@ class GalleryItem extends Component {
   render() {
 
     return (
-      <div>
+      <Col>
         {/* Image or Description */}
         <div onClick={this.toggleDescription}>
           {
@@ -44,7 +45,7 @@ class GalleryItem extends Component {
               `${this.props.item.likes} people love this!`
           }
         </div>
-      </div>
+      </Col>
     );
   }
 }
