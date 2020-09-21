@@ -8,8 +8,8 @@
 - [x] Render images via `GalleryList` and `GalleryItem`
 - [x] Click image to see description
 - [x] Display number of likes
-- [ ] Like button --> PUT /gallery/like/:id
-    - Update DOM with latest likes
+- [x] Like button --> PUT /gallery/like/:id
+    [x] Update DOM with latest likes
 
 
 

@@ -19,6 +19,9 @@ router.put('/like/:id', (req, res) => {
 // GET Route
 router.get('/', (req, res) => {
     res.send(galleryItems);
+
+
+    // SELECT * FROM "gallery" ORDER BY "id";
 }); // END GET Route
 
 module.exports = router;

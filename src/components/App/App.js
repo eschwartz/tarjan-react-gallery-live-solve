@@ -10,6 +10,10 @@ class App extends Component {
   };
 
   componentDidMount = () => {
+    this.getGallery();
+  }
+
+  getGallery = () => {
     axios({
       method: 'GET',
       url: '/gallery'
@@ -27,6 +31,15 @@ class App extends Component {
 
   onLike = (itemId) => {
     console.log('onLike in App.js. ID to like:', itemId);
+
+    // this.setState({
+    //   gallery: this.state.gallery.map(item => {
+    //     return {
+    //       ...item,
+    //       likes: item.id === itemId ? item.likes + 1 : item.likes
+    //     };
+    //   })
+    // })
     
     axios({
       method: 'PUT',
@@ -34,7 +47,7 @@ class App extends Component {
     }).then(response => {
       console.log('PUT complete', response)
 
-      // TODO: call GET again, and refresh the gallery
+      this.getGallery();
     }).catch(err => {
       console.error('PUT Failed', err);
     });
