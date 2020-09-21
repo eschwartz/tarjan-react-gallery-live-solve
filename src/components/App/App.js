@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
 import GalleryList from '../GalleryList/GalleryList';
+import {Container} from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+// Equivalent to:
+// import Bootstrap from 'react-bootstrap';
+// const Container = Bootstrap.Container;
 
 class App extends Component {
 
@@ -62,10 +68,12 @@ class App extends Component {
         <br/>
 
         <h3>My Photo Gallery</h3>
-        <GalleryList 
-          gallery={this.state.gallery}
-          onLike={this.onLike}
-        />
+        <Container>
+          <GalleryList 
+            gallery={this.state.gallery}
+            onLike={this.onLike}
+          />
+        </Container>
       </div>
     );
   }

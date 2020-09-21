@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import {Col, Button} from 'react-bootstrap';
+import './GalleryItem.css';
 
 class GalleryItem extends Component {
 
@@ -16,9 +18,9 @@ class GalleryItem extends Component {
   render() {
 
     return (
-      <div>
+      <Col>
         {/* Image or Description */}
-        <div onClick={this.toggleDescription}>
+        <div onClick={this.toggleDescription} className="photo">
           {
             this.state.showDescription ?
 
@@ -33,7 +35,13 @@ class GalleryItem extends Component {
 
         {/* Like Button */}
         <div>
-          <button onClick={() => this.props.onLike(this.props.item.id)}>Love it!</button>
+          <Button 
+            variant="primary"
+            onClick={() => this.props.onLike(this.props.item.id)}
+            className="loveItBtn"
+          >
+            Love it!
+          </Button>
         </div>
 
         {/* Display current likes */}
@@ -44,7 +52,7 @@ class GalleryItem extends Component {
               `${this.props.item.likes} people love this!`
           }
         </div>
-      </div>
+      </Col>
     );
   }
 }
