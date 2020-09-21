@@ -3,7 +3,12 @@ import React, { Component } from 'react';
 class GalleryItem extends Component {
   render() {
     return (
-      <div></div>
+      <div>
+        <img
+           src={this.props.item.path} 
+           alt={this.props.item.description} 
+         />
+      </div>
     );
   }
 }
