@@ -6,25 +6,25 @@ const galleryItems = [
         likes: 0 
     },
     { 
-        id: 1, 
+        id: 2, 
         path: 'images/dooper.png', 
         description: 'Dooper Coten (attempt 2)', 
         likes: 5 
     },
     { 
-        id: 1, 
+        id: 3, 
         path: 'images/emma.png', 
         description: 'Emma striking a pose.', 
         likes: 3
     },
     { 
-        id: 1, 
+        id: 4, 
         path: 'images/jake.png', 
         description: 'Jake looking fresh', 
         likes: 1
     },
     { 
-        id: 1, 
+        id: 5, 
         path: 'images/tyler.png', 
         description: 'Tyler feeling monday', 
         likes: 175

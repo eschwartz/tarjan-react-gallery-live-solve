@@ -3,8 +3,6 @@
 [x] Add photos to public/images
   [x] Update data.js w/id, title, desc, path
 
-[ ] Click button to "like"
-    - probs use PUT endpoint
 
 - [ ] GET /gallery in App.js, and save to state
 - [ ] Render images via `GalleryList` and `GalleryItem`
