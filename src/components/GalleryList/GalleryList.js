@@ -11,6 +11,7 @@ class GalleryList extends Component {
     // ];
 
     // From https://stackoverflow.com/questions/8495687/split-array-into-chunks
+    // or see lodash: https://lodash.com/docs/4.17.15#chunk
     const chunk = (arr, n) => arr.length ? [arr.slice(0, n), ...chunk(arr.slice(n), n)] : []
 
     let rowsOfItems = chunk(this.props.gallery, 3);
